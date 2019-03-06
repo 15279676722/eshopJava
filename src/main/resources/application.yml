@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/electronshop?serverTimezone=GMT%2B8
+    username: root
+    password:
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    mybatis:
+      typeAliasesPackage: com.example.demo.entity
+      mapperLocations: com.example.demomapper/*.xml
